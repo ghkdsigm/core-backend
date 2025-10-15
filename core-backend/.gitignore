@@ -1,0 +1,41 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Build / coverage
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Env & secrets
+.env
+.env.*.local
+
+# Runtime storage
+storage/seq/
+storage/renders/
+
+# If you commit placeholder backgrounds, keep directory only
+assets/backgrounds/*
+!assets/backgrounds/.keep
+
+# Logs
+logs/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Misc
+*.swp
+*.swo
