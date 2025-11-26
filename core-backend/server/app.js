@@ -7,6 +7,7 @@ dotenv.config()
 
 import ingest from './routes/ingest.js'
 import compose from './routes/compose.js'
+import insta360 from './routes/insta360.js'  
 
 const app = express()
 app.use(express.json())
@@ -14,6 +15,7 @@ app.use(express.json())
 app.use(cors({ origin: true, credentials: true }));
 app.options('*', cors());
 app.use("/viewer", viewer);
+app.use("/insta360", insta360); 
 app.use("/seq-static", express.static("storage/seq", { maxAge: "1h" }));
 app.use("/viewer-static", express.static("storage/renders", { maxAge: "1h" }));
 
